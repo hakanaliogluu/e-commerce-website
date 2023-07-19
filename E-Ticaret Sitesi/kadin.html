@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ürünler</title>
+    <link rel="stylesheet" type="text/css" href="kadin.css">
+</head>
+<body>
+    <header>
+        <h1>E-Ticaret Sitesi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Keşfet</a></li>
+                <li><a href="erkek.html">Erkek</a></li>
+                <li><a href="kadin.html">Kadın</a></li>
+                <li><a href="sepetim.html">Sepetim</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#">Giriş Yap</a>
+                    <div class="dropdown-content">
+                        <a href="girisYap.html">Giriş Yap</a>
+                        <a href="uyeOl.html">Üye Ol</a>
+                    </div>
+                </li>
+
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Ara">
+                    <button onclick="searchProduct()">Ara</button>
+                </div>                
+
+            </ul>
+        </nav>
+    </header>
+
+    <div id="product-container">
+        <!-- Ürünler buraya dinamik olarak eklenecek -->
+    </div>
+
+    <section id="products">
+        <!-- Tüm ürünlerin listelendiği bir bölüm -->
+        <div class="product">
+            <img src="Resimler\Kadın Siyah Gömlek.jpg" alt="Kadın Siyah Gömlek">
+            <h3>Kadın Siyah Gömlek</h3>
+            <p>Fiyat: $14.99</p>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="Resimler\Kadın Beyaz Gömlek.jpg" alt="Kadın Beyaz Gömlek">
+            <h3>Kadın Beyaz Gömlek</h3>
+            <p>Fiyat: <span class="discounted-price">$24.99</span> 19.99</p>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="Resimler\Kadın Siyah Pantolon.jpg" alt="Kadın Siyah Pantolon">
+            <h3>Kadın Siyah Pantolon</h3>
+            <p>Fiyat: $24.99</p>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="Resimler\Kadın Lacivert Pantolon.jpg" alt="Kadın Lacivert Pantolon">
+            <h3>Kadın Lacivert Pantolon</h3>
+            <p>Fiyat: $34.99</p>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="Resimler\Kadın Siyah Tişört.jpg" alt="Kadın Siyah Tişört">
+            <h3>Kadın Siyah Tişört</h3>
+            <p>Fiyat: $9.99</p>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="Resimler\KadınBeyaz Tişört.jpg" alt="KadınBeyaz Tişört">
+            <h3>KadınBeyaz Tişört</h3>
+            <p>Fiyat: $14.99</p>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Tüm hakları saklıdır. &copy; 2023 E-Ticaret Sitesi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

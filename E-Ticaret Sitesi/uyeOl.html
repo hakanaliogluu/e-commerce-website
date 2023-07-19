@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Üye Ol</title>
+    <link rel="stylesheet" type="text/css" href="uyeOl.css">
+</head>
+<body>
+    <header>
+        <h1>E-Ticaret Sitesi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Keşfet</a></li>
+                <li><a href="erkek.html">Erkek</a></li>
+                <li><a href="kadin.html">Kadın</a></li>
+                <li><a href="sepetim.html">Sepetim</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#">Giriş Yap</a>
+                    <div class="dropdown-content">
+                        <a href="girisYap.html">Giriş Yap</a>
+                        <a href="uyeOl.html">Üye Ol</a>
+                    </div>
+                </li>
+
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Ara">
+                    <button onclick="searchProduct()">Ara</button>
+                </div>                
+
+            </ul>
+        </nav>
+    </header>
+
+    <div id="product-container">
+        <!-- Ürünler buraya dinamik olarak eklenecek -->
+    </div>
+
+    <h1>Üye Ol</h1>
+
+    <form>
+        <label for="name">Ad:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="surname">Soyad:</label>
+        <input type="text" id="surname" name="surname" required>
+
+        <label for="email">E-posta:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="password">Şifre:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Üye Ol</button>
+    </form>
+
+    <footer>
+        <p>Tüm hakları saklıdır. &copy; 2023 E-Ticaret Sitesi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

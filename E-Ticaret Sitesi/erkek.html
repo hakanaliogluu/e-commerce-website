@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ürünler</title>
+    <link rel="stylesheet" type="text/css" href="erkek.css">
+</head>
+<body>
+    <header>
+        <h1>E-Ticaret Sitesi</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Keşfet</a></li>
+                <li><a href="erkek.html">Erkek</a></li>
+                <li><a href="kadin.html">Kadın</a></li>
+                <li><a href="sepetim.html">Sepetim</a></li>
+                <li class="dropdown">
+                    <a class="dropdown-toggle" href="#">Giriş Yap</a>
+                    <div class="dropdown-content">
+                        <a href="girisYap.html">Giriş Yap</a>
+                        <a href="uyeOl.html">Üye Ol</a>
+                    </div>
+                </li>
+
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Ara">
+                    <button onclick="searchProduct()">Ara</button>
+                </div>                
+
+            </ul>
+        </nav>
+    </header>
+
+    <div id="product-container">
+        <!-- Ürünler buraya dinamik olarak eklenecek -->
+    </div>
+
+    <section id="products">
+        <!-- Tüm ürünlerin listelendiği bir bölüm -->
+        <div class="product">
+            <img src="Resimler\gömlek.jpg" alt="Erkek Beyaz Gömlek">
+            <h3>Erkek Beyaz Gömlek</h3>
+            <p>Fiyat: $19.99</p>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="Resimler\gömlek2.jpg" alt="Erkek Kareli Gömlek">
+            <h3>Erkek Kareli Gömlek</h3>
+            <p>Fiyat: $24.99</p>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="Resimler\pantolon.jpg" alt="Erkek Bej Pantolon">
+            <h3>Erkek Bej Pantolon</h3>
+            <p>Fiyat: $29.99</p>
+            <button>Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="Resimler\pantolon2.jpg" alt="Erkek Gri Pantolon">
+            <h3>Erkek Gri Pantolon</h3>
+            <p>Fiyat: <span class="discounted-price">$49.99</span> $39.99</p>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="Resimler\erkeksiyaht-shirt.jpg" alt="Erkek Siyah Tişört">
+            <h3>Erkek Siyah Tişört</h3>
+            <p>Fiyat: $14.99</p>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+        <div class="product">
+            <img src="Resimler\erkekmavit-shirt.jpg" alt="Erkek Mavi Tişört">
+            <h3>Erkek Mavi Tişört</h3>
+            <p>Fiyat: $19.99</p>
+            <button class="add-to-cart">Sepete Ekle</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>Tüm hakları saklıdır. &copy; 2023 E-Ticaret Sitesi</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
